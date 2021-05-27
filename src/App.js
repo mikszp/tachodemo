@@ -8,6 +8,7 @@ import Header from "./Header";
 import Home from "./Home";
 import Profile from "./Profile";
 import { Button } from "@material-ui/core";
+import axios from "axios";
 
 function App() {
 	// const history = useHistory();
