@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/tachodemo/static/css/main.16bd39e1.chunk.css",
+    "main.js": "/tachodemo/static/js/main.9183f945.chunk.js",
+    "main.js.map": "/tachodemo/static/js/main.9183f945.chunk.js.map",
+    "runtime-main.js": "/tachodemo/static/js/runtime-main.b462eb24.js",
+    "runtime-main.js.map": "/tachodemo/static/js/runtime-main.b462eb24.js.map",
+    "static/js/2.a1d8a5d5.chunk.js": "/tachodemo/static/js/2.a1d8a5d5.chunk.js",
+    "static/js/2.a1d8a5d5.chunk.js.map": "/tachodemo/static/js/2.a1d8a5d5.chunk.js.map",
+    "static/js/3.493a6137.chunk.js": "/tachodemo/static/js/3.493a6137.chunk.js",
+    "static/js/3.493a6137.chunk.js.map": "/tachodemo/static/js/3.493a6137.chunk.js.map",
+    "index.html": "/tachodemo/index.html",
+    "precache-manifest.89e8781db4d7a470668d215518b5a5d8.js": "/tachodemo/precache-manifest.89e8781db4d7a470668d215518b5a5d8.js",
+    "service-worker.js": "/tachodemo/service-worker.js",
+    "static/css/main.16bd39e1.chunk.css.map": "/tachodemo/static/css/main.16bd39e1.chunk.css.map",
+    "static/js/2.a1d8a5d5.chunk.js.LICENSE.txt": "/tachodemo/static/js/2.a1d8a5d5.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/tachodemo/static/media/logo.06e73328.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b462eb24.js",
+    "static/js/2.a1d8a5d5.chunk.js",
+    "static/css/main.16bd39e1.chunk.css",
+    "static/js/main.9183f945.chunk.js"
+  ]
+}
