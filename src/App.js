@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import SignUp from "./SignUp";
@@ -12,6 +12,10 @@ import { Button } from "@material-ui/core";
 function App() {
 	// const history = useHistory();
 	const [auth, setAuth] = useState(false);
+
+	useEffect(() => {
+		axios.get("https://tachoserver.herokuapp.com/users");
+	}, []);
 
 	const handleAuth = () => {
 		console.log("clicked");
