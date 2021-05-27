@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import SignUp from "./SignUp";
+import SignIn from "./SignIn";
+import { Route, BrowserRouter as Router, useHistory } from "react-router-dom";
+import Header from "./Header";
+import Home from "./Home";
+import Profile from "./Profile";
+import { Button } from "@material-ui/core";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	// const history = useHistory();
+	const [auth, setAuth] = useState(false);
+
+	const handleAuth = () => {
+		console.log("clicked");
+		setAuth((auth) => !auth);
+	};
+	return (
+		<div className="App">
+			<Router>
+				<Header />
+				<Route exact path="/register">
+					<SignUp auth={auth} handleAuth={handleAuth} />
+				</Route>
+				<Route exact path="/login">
+					<SignIn auth={auth} handleAuth={handleAuth} />
+				</Route>
+				<Route exact path="/profile">
+					<Profile auth={auth} handleAuth={handleAuth} />
+				</Route>
+				<Route exact path="/">
+					<Home auth={auth} handleAuth={handleAuth} />
+				</Route>
+			</Router>
+		</div>
+	);
 }
 
 export default App;
