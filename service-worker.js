@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tachodemo/precache-manifest.89e8781db4d7a470668d215518b5a5d8.js"
+  "/tachodemo/precache-manifest.431765f52e269fe90ba88a4595561d77.js"
 );
 
 self.addEventListener('message', (event) => {
